@@ -10,7 +10,7 @@ import { AIMessage, HumanMessage } from '@langchain/core/messages'
 
 const model = new ChatOpenAI({
     modelName: 'gpt-3.5-turbo',
-    temperature: 0.5,
+    temperature: 1,
 })
 
 const prompt = ChatPromptTemplate.fromMessages([

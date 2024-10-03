@@ -20,7 +20,7 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 //Setup Information Source
-const URL_SOURCE = `https://en.wikipedia.org/wiki/%C3%9Cr%C3%BCmqi`
+const URL_SOURCE = `https://iowagirleats.com/easy-baked-ribs/`
 
 // Instantiate Model
 const model = new ChatOpenAI({
@@ -121,7 +121,7 @@ const conversationChain = await createRetrievalChain({
 // Test
 const response = await conversationChain.invoke({
     chat_history: chatHistory,
-    input: "Where is Urumqi? How is its economy?",
+    input: "Give me a summary of how it was made?",
 });
 
 console.log(response);
